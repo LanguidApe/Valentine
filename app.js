@@ -6,11 +6,15 @@ let body = document.querySelector('body');
 
 yesBtn.addEventListener('click', () => {
     let text = document.querySelector('#card h1');
+    let img = document.querySelector('#card img');
+    img.src = 'https://images.unsplash.com/photo-1566513875272-0e184c92b77c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXhjaXRlZHxlbnwwfHwwfHx8MA%3D%3D';
     text.innerText = 'OMG Really??';
 
     yesBtn.id = '2YesBtn';
 
     yesBtn.addEventListener('click', () => {
+        let img = document.querySelector('#card img');
+        img.src = 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2R8ZW58MHx8MHx8fDA%3D';
         let text = document.querySelector('#card h1');
         text.innerHTML = 'Yayyyy! <br> <p>Now pick a choice of the three below so I can slave away in the kitchen while you eat like a queen, just as you deserve.<p/>';
         yesBtn.remove();
