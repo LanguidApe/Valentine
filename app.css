@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+
+body {
+    background-image: url('https://media.istockphoto.com/id/2189049509/photo/valentines-day-concept-with-gift-boxes-wrapped-in-heart-patterned-paper-and-red-ribbons.jpg?s=2048x2048&w=is&k=20&c=f5YDvoJMF9zlLNPtWBv4GeEjuUTybH-3sWYjuw7U-6g=');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    max-width: 90%;
+    border: 10px solid rgb(156, 23, 74);
+    border-radius: 30px;
+    z-index: 1;
+    background: rgb(255, 218, 232);
+}
+
+#card b {
+    color: red;
+    font-size: 50px;
+}
+
+#card img {
+    width: 100%;
+}
+
+#card button {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgb(211, 97, 97);
+    margin: 15px;
+}
+
+#card button:nth-of-type(2) {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    list-style: '\2661';
+}
